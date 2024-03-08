@@ -1,0 +1,314 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:visited{
+    color: #fff;
+}
+
+/* navbar */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation li a {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+    padding: 12px 24px;
+}
+
+.navigation li a:hover {
+    background-color: slategrey;
+}
+
+.search {
+    padding: 12px 24px;
+}
+
+.search:hover {
+    background-color: red;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* banner */
+
+.banner img {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    filter: grayscale(100%);
+    transition: filter 1s;
+}
+
+.banner img:hover {
+    filter: none;
+}
+
+/* banda */
+
+.banda {
+    padding: 50px 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.banda h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.banda p {
+    padding: 20px;
+}
+
+.album {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.album1{
+    width: 300px;
+    height: 300px;
+}
+
+.album1 img{
+    width: 100%;
+}
+
+.album1 p {
+    text-align: center;
+}
+
+/* Section recorrido */
+
+.recorrido {
+    background-color: #000;
+    color: #fff;
+}
+
+.recorrido-contenido {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 64px 16px;
+    margin-bottom: 64px;
+    margin-top: 64px;
+}
+
+.recorrido-contenido h2 {
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 20px 0;
+}
+
+.subtitulo{
+    text-align: center;
+    opacity: 0.60;
+    margin: 10px 0;
+}
+
+.recorrido ul {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #757575;
+    margin: 20px 0;
+}
+
+.recorrido ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.recorrido ul li span {
+    background-color: red;
+    color: #fff;
+    margin-left: 16px;
+    padding: 5px 7px;
+}
+
+#entradas {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.card-contenido {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 32px 0;
+}
+
+.card1 {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+}
+
+.card1 img {
+    width: 100%;
+    height: 200px;
+    vertical-align: middle;
+}
+
+.info {
+    padding: 16px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+/* contacto */
+
+.contacto-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 64px 0;
+}
+
+.contacto-contenido h2 {
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.datos {
+    padding: 32px 0;
+    display: flex;
+}
+
+.datos1{
+    width: 50%;
+}
+
+.datos1 i {
+    font-size: 24px;
+}
+
+.datos1 p {
+    display: inline-block;
+    font-size: 22px;
+    margin-left: 15px;
+    padding: 10px 0;
+}
+
+.form {
+    width: 50%;
+}
+
+input[type="text"] {
+    width: 150px;
+    height: 40px;
+    margin: 10px 0 10px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="email"] {
+    width: 200px;
+    height: 40px;
+    margin: 10px 0 10px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 350px;
+    height: 100px;
+    margin: 10px 0 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: #000;
+    color: #fff;
+    padding: 64px;
+    text-align: center;
+}
+
+footer i {
+    font-size: 24px;
+    margin: 10px;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .album, .card-contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .datos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
